@@ -5,8 +5,8 @@ A sentinel which publishes disk, memory and cpu loads statistics to DaTtSs' serv
 
 See: http://dattss.com/
 
-Configuration
--------------
+Usage
+-----
 Retrieve your authentication key on on DaTtSs website and install this NodeJS application on your servers:
 
 `DATTS_AUTH_KEY=<yout auth key> SERVER_NAME=<server name> node app.js`
