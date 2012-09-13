@@ -1,0 +1,15 @@
+{
+  "name": "dattss-linuxstats",
+  "version": "0.0.1",
+  "description": "Basic linux server statistics sentinel for DaTtSs",
+  "author": {
+    "name": "Renaud Boutet",
+    "email": "rb@focusmatic.com",
+    "url": "http://twitter.com/boutetren"
+  },
+  "main":"./app.js",
+  "dependencies": {
+    "dattss": "0.1.x",
+    "df":"1.x"
+  }
+}
