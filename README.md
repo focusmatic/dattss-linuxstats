@@ -9,9 +9,9 @@ Usage
 -----
 Retrieve your authentication key on on DaTtSs website and install this NodeJS application on your servers:
 
-`DATTS_AUTH_KEY=<yout auth key> SERVER_NAME=<server name> node app.js`
+`DATTS_AUTH_KEY=<yout auth key> SERVER_NAME=<server name> node sentinel.js`
 
 Once launched you'll see the statistics on DaTtSs' dashboard displayed as:
-- <server name>.cpuload (in percent)
-- <server name>.memoryload (in percent)
-- <server name>.diskload (the biggest partition in percent)
+- [server name].cpuload (in percent)
+- [server name].memoryload (in percent)
+- [server name].diskload (the biggest partition in percent)
