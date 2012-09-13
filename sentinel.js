@@ -39,13 +39,13 @@ var sentinel = require('dattss').process({ name: config.process_name,auth: confi
 setInterval(function() {
 	var freemem = osutils.freememPercentage();
 	memload = Math.round((1 - freemem) * 100);
-	sentinel.agg(config.servername+'.memload', memload+'g');
+	sentinel.agg('memload', memload+'g');
 },statsPeriodInMs);
 
 //Monitor the CPU
 osutils.cpuUsage(function(cpuLoad){
 	cpuLoad = Math.round(cpuLoad * 100);
-	sentinel.agg(config.servername+ '.cpuload',cpuLoad + 'g');
+	sentinel.agg('cpuload',cpuLoad + 'g');
 	return true;
 },false,statsPeriodInMs);
 
@@ -65,7 +65,7 @@ setInterval(function() {
 				maxEntry = entry;
 			}
 		});
-		sentinel.agg(config.servername+ '.diskload',maxEntry.percent + 'g');
+		sentinel.agg('diskload',maxEntry.percent + 'g');
 	});
 },statsPeriodInMs);
 
