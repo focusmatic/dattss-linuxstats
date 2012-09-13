@@ -7,13 +7,11 @@ See: http://dattss.com/
 
 Configuration
 -------------
-Retrieve your authentication key on on DaTtSs website and install this node application on your servers:
+Retrieve your authentication key on on DaTtSs website and install this NodeJS application on your servers:
 
 `DATTS_AUTH_KEY=<yout auth key> SERVER_NAME=<server name> node app.js`
 
 Once launched you'll see the statistics on DaTtSs' dashboard displayed as:
--<server name>.cpuload (in percent)
--<server name>.memoryload (in percent)
--<server name>.diskload (in percent)
-
-*INFO:* The disk monitored is the biggest one
+- <server name>.cpuload (in percent)
+- <server name>.memoryload (in percent)
+- <server name>.diskload (the biggest partition in percent)
