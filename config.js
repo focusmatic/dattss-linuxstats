@@ -30,9 +30,9 @@ config.process_name = process.env.PROCESS_NAME || 'Linux-Servers';
 config.servername =  process.env.SERVER_NAME || os.hostname();
 
 //The mandatory DATTS_AUTH_KEY to retrieve on http://dattss.com/
-config.datts_auth_key = process.env.DATTS_AUTH_KEY;
-if(!config.datts_auth_key){
-	console.error("ERROR: You must define a DATTS_AUTH_KEY env variable");
+config.dattss_auth_key = process.env.DATTSS_AUTH_KEY;
+if(!config.dattss_auth_key){
+	console.error("ERROR: You must define a DATTSS_AUTH_KEY env variable");
 	process.exit(1);
 }
 

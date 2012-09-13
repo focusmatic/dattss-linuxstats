@@ -29,7 +29,7 @@ var dattss = require('dattss');
 var statsPeriodInMs = 1000;
 
 //The sentinel process
-var sentinel = require('dattss').process({ name: config.process_name,auth: config.datts_auth_key });
+var sentinel = require('dattss').process({ name: config.process_name,auth: config.dattss_auth_key });
 
 //Monitor the free memory
 setInterval(function() {
