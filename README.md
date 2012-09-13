@@ -9,7 +9,7 @@ Usage
 -----
 Retrieve your authentication key on on DaTtSs website and install this NodeJS application on your servers:
 
-`DATTS_AUTH_KEY=<yout auth key> SERVER_NAME=<server name> node sentinel.js`
+`DATTS_AUTH_KEY=<yout auth key> PROCESS_NAME=<server name> node sentinel.js`
 
 Once launched you'll see the statistics on DaTtSs' dashboard displayed as:
 - cpuload (in percent)
