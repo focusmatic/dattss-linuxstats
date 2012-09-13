@@ -25,6 +25,10 @@ var osutils = require('./lib/os-utils');
 var config = require('./config');
 var dattss = require('dattss');
 
+process.on('uncaughtException', function(err) {
+  console.log(err);
+});
+
 //The statistics period
 var statsPeriodInMs = 1000;
 
@@ -64,3 +68,6 @@ setInterval(function() {
 		sentinel.agg(config.servername+ '.diskload',maxEntry.percent + 'g');
 	});
 },statsPeriodInMs);
+
+console.log("Sentinel is launched!");
+
