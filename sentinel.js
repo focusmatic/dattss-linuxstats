@@ -23,7 +23,6 @@ var dattss = require('dattss');
 var df = require('df');
 var osutils = require('./lib/os-utils');
 var config = require('./config');
-var dattss = require('dattss');
 
 process.on('uncaughtException', function(err) {
   console.log(err);
@@ -33,7 +32,7 @@ process.on('uncaughtException', function(err) {
 var statsPeriodInMs = 1000;
 
 //The sentinel process
-var sentinel = require('dattss').process({ name: config.process_name,auth: config.dattss_auth_key });
+var sentinel = dattss.process({ name: config.process_name,auth: config.dattss_auth_key });
 
 //Monitor the free memory
 setInterval(function() {
